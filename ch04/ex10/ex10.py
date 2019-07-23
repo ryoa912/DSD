@@ -14,3 +14,8 @@ def test_func():
 
 
 test_func()
+
+# result:
+# start
+# test_func
+# end

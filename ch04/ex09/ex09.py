@@ -7,3 +7,6 @@ def get_odds(first, last, step):
 for i, odd in enumerate(get_odds(1, 10, 2), 1):
     if i == 3:
         print(odd)
+
+# result:
+# 5

@@ -7,3 +7,6 @@ try:
     raise OopsException()
 except OopsException:
     print('Caught an oops')
+
+# result:
+# Caught an oops
