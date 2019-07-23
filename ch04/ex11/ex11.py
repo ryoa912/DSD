@@ -1,1 +1,9 @@
-#@title ch04-11
+# @title ch04-11
+class OopsException(Exception):
+    pass
+
+
+try:
+    raise OopsException()
+except OopsException:
+    print('Caught an oops')
