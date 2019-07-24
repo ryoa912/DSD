@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """4-8
 ['Harry', 'Ron', 'Hermione']というリストを返すgoodという関数を定義しよう。
 """
