@@ -8,14 +8,14 @@ def coretime(start, end, work_threshold=15):
     ----------
     start : int
         Working start time
-    start : int
+    end : int
         Working end time
     Returns
     -------
     core_time_string : string
         coretime text
 
-    Raises:
+    Raises
     ---------
     ValueError
         if start or end is under 1 or over 24
