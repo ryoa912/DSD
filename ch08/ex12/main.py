@@ -6,4 +6,6 @@ print(conn.hincrby('test', 'count', 10))
 print(conn.hincrby('test', 'count', 100))
 
 # result
-# {b'count': b'1', b'name': b'Fester Bestertester'}
+# 2
+# 12
+# 112
