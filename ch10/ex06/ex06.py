@@ -17,7 +17,6 @@ if __name__ == '__main__':
         seconds = random.randint(1, 5)
         proc = multiprocessing.Process(target=timer, args=(seconds,))
         proc.start()
-
 # result:
 # alerm! now: 2019-10-30 02:09:26.917144
 # alerm! now: 2019-10-30 02:09:28.909699
