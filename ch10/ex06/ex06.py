@@ -27,3 +27,5 @@ if __name__ == '__main__':
 # ⇒https://www.atmarkit.co.jp/ait/articles/1806/05/news023.html
 # ・ランダムな整数を範囲指定で取得する方法
 # ⇒https://note.nkmk.me/python-random-randrange-randint/
+# ・args=([引数],)と記載しているのは、タプルであることを明示するため
+# 　タプル、リストを渡せばOK.単一のintなどを渡すとエラー. (引数)だけだとタプルと見なされない

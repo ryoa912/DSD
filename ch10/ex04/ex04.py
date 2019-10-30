@@ -1,11 +1,9 @@
 # @title ch10-ex04
 # カレントディレクトリのファイルのリストを作ろう。
 import os
-files = []
 path = os.path.dirname(__file__)
-for ｆ in os.listdir(path):
-    if os.path.isfile(path + os.sep + f):
-        files.append(f)
+files = [file for file in os.listdir(path)
+         if os.path.isfile(path + os.sep + file)]
 
 print(files)
 
@@ -16,3 +14,4 @@ print(files)
 # ・os.listdir('フォルダパス')だと、ファイルに加えてフォルダもリストに含まれてしまう
 # ⇒ファイルかどうか判定してやる必要がある
 # https://qiita.com/Morio/items/f34dab8825c9d76664f5
+# リスト内包表記つかったらどうか

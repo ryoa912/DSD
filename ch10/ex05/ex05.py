@@ -1,11 +1,9 @@
 # @title ch10-ex05
 # 親ディレクトリのファイルのリストを作ろう。
 import os
-files = []
 path = os.path.dirname(__file__) + os.sep + '..'
-for ｆ in os.listdir(path):
-    if os.path.isfile(path + os.sep + f):
-        files.append(f)
+files = [file for file in os.listdir(path)
+         if os.path.isfile(path + os.sep + file)]
 
 print(files)
 
