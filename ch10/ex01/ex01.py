@@ -2,9 +2,8 @@
 # 現在の日付をtoday.txtというテキストファイルに文字列の形で書き込もう。
 import datetime
 import os
-fout = open(os.path.dirname(__file__) + os.sep + 'today.txt', 'wt')
-print(datetime.date.today(), file=fout)
-fout.close()
+with open(os.path.dirname(__file__) + os.sep + 'today.txt', 'wt') as fout:
+    print(datetime.date.today(), file=fout)
 
 # result:
 # 2019-10-30
