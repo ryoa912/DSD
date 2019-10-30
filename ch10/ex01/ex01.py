@@ -3,7 +3,7 @@
 import datetime
 import os
 with open(os.path.dirname(__file__) + os.sep + 'today.txt', 'wt') as fout:
-    print(datetime.date.today(), file=fout)
+    print(datetime.date.today().isoformat(), file=fout)
 
 # result:
 # 2019-10-30
