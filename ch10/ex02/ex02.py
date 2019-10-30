@@ -1,7 +1,7 @@
 # @title ch10-ex02
 # テキストファイルtoday.txtの内容をtoday_stringという文字列変数に読み込もう。
-import os.path
-fin = open(os.path.dirname(__file__) + '/' + 'today.txt', 'rt')
+import os
+fin = open(os.path.dirname(__file__) + os.sep + 'today.txt', 'rt')
 today_string = fin.read()
 fin.close()
 print('today_string: ' + today_string)
